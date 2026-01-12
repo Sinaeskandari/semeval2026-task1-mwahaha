@@ -2,6 +2,3 @@
 # macOS
 .DS_Store
 **/.DS_Store
-
-# local experiments
-src/Rag/
