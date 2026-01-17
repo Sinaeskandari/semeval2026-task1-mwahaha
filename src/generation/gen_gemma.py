@@ -1,3 +1,34 @@
+#downloading the model into the google drive
+
+import pandas as pd
+import os
+# 1. Mount Drive
+from google.colab import drive
+drive.mount('/content/drive')
+
+import pandas as pd
+
+
+from unsloth import FastLanguageModel
+from google.colab import drive
+
+# 1. Mount Drive
+drive.mount('/content/drive')
+
+# 2. Download model from Internet to Colab first
+model, tokenizer = FastLanguageModel.from_pretrained(
+    model_name = "unsloth/gemma-2-9b-it-bnb-4bit",
+    max_seq_length = 2048,
+    load_in_4bit = True,
+)
+
+# 3. Save it to your Google Drive PERMANENTLY
+# This might take 2-5 minutes to copy
+save_path = "/content/drive/MyDrive/Humor_Project/Gemma_Model"
+model.save_pretrained(save_path)
+tokenizer.save_pretrained(save_path)
+
+print(f"✅ Model saved to Google Drive at: {save_path}")
 ########## downloading and saving Gemma model to Google Drive
 
 from google.colab import drive
@@ -23,6 +54,8 @@ model.save_pretrained(save_path)
 tokenizer.save_pretrained(save_path)
 
 print(f"✅ Model saved to Google Drive at: {save_path}")
+
+
 
 
 # running the model
