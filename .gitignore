@@ -2,3 +2,5 @@
 # macOS
 .DS_Store
 **/.DS_Store
+# Unsloth cache
+unsloth_compiled_cache/
