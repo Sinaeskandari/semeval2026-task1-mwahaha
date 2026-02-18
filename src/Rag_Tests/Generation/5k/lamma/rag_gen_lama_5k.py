@@ -124,8 +124,7 @@ if not os.path.exists(input_path):
     data = []
 else:
     df = pd.read_csv(input_path, sep='\t')
-    # Limit to top 600 as requested
-    data = df.head(600).to_dict('records')
+    data = df.to_dict('records')
 
     # DEBUG: Pick 3 headlines + 3 word-pairs (Uncomment to use)
     #df_head = df[df['headline'].notna() & (df['headline'] != "-")].head(3)
