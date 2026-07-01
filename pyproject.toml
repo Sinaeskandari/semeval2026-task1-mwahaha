@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "humor-mwahaha"
+version = "1.0.0"
+description = "Humor generation and tournament evaluation pipeline for SemEval 2026 Task 1 (MWAHAHA)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Team MWAHAHA, Politecnico di Torino" }]
+keywords = ["nlp", "humor-generation", "llm", "rag", "dpo", "semeval"]
+
+# Runtime dependencies are pinned in requirements.txt (some, e.g. Unsloth, are
+# installed from git and are best managed there). Install with:
+#   pip install -r requirements.txt && pip install -e .
+dependencies = [
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "tqdm>=4.65.0",
+]
+
+[project.scripts]
+humor-generate = "humor.generate:main"
+humor-generate-rag = "humor.generate_rag:main"
+humor-judge = "humor.judge:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["humor*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

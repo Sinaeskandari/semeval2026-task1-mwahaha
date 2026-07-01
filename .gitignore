@@ -1,6 +1,36 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
 
-# macOS
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
 .DS_Store
 **/.DS_Store
-# Unsloth cache
+
+# ---- ML artefacts / caches ----
 unsloth_compiled_cache/
+hf_cache/
+wandb/
+*.ckpt
+outputs/
+checkpoint-*/
+
+# ---- Secrets ----
+.env
+*.key
