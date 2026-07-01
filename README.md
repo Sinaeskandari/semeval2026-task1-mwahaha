@@ -242,25 +242,3 @@ persistence. The `humor` package is Colab-aware:
   `--input` / `--output` flags.
 
 ---
-
-## 📜 Citation
-
-If you use this code or the tournament-evaluation methodology, please cite:
-
-```bibtex
-@inproceedings{mwahaha2026semeval,
-  title     = {{MWAHAHA}: Tournament-Based Humor Generation with Retrieval and
-               Preference Optimization},
-  author    = {Team MWAHAHA},
-  booktitle = {Proceedings of the 20th International Workshop on Semantic
-               Evaluation (SemEval-2026)},
-  year      = {2026},
-  note      = {SemEval 2026 Task 1: Humor Generation},
-  address   = {Politecnico di Torino}
-}
-```
-
-## 📝 License
-
-Released under the [MIT License](LICENSE). Model checkpoints and the ShortJokes
-corpus remain subject to their respective upstream licenses.
