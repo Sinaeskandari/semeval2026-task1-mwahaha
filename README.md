@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎭 MWAHAHA — Tournament-Based Humor Generation
+# 🎭 MINDS at SemEval-2026-Task 1: Enhancing Humor Generation through RAG and Synthetic DPO Alignment
 
 ### SemEval 2026 · Task 1 · Humor Generation from Headlines and Word Pairs
 
@@ -11,8 +11,6 @@ preference optimization.*
 <p>
   <img alt="Python" src="https://img.shields.io/badge/python-3.10%2B-blue.svg">
   <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-2.0%2B-ee4c2c.svg">
-  <img alt="Unsloth" src="https://img.shields.io/badge/Unsloth-4bit-6f42c1.svg">
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-green.svg">
 </p>
 
 </div>
@@ -21,7 +19,7 @@ preference optimization.*
 
 ## ✨ Overview
 
-**MWAHAHA** is a fully reproducible pipeline for *generating and evaluating jokes*
+A fully reproducible pipeline for *generating and evaluating jokes*
 in response to two prompt types from SemEval 2026 Task 1:
 
 - **Headlines** — write a standalone joke that satirizes a news headline.
@@ -227,7 +225,7 @@ Open in Colab or Jupyter, top-to-bottom:
 
 <!-- Add headline result tables / win-rate figures here as they are finalised. -->
 
-📄 Full methodology, ablations and analysis: **[`SemEval_2026_Task_1_MWAHAHA.pdf`](SemEval_2026_Task_1_MWAHAHA.pdf)**.
+📄 Full methodology, ablations and analysis: **[paper](https://aclanthology.org/2026.semeval-1.372/)** ([PDF in this repo](2026.semeval-1.372.pdf)).
 
 ---
 
